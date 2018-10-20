@@ -14,6 +14,15 @@ public class Predmet {
         sifra=s;
         maxbrstudenata=br;
         nizStudenata=new Student[maxbrstudenata];
+        brojStudenata=0;
+    }
+
+    public Predmet(){
+        naziv="Nepostojeci predmet";
+        sifra=0;
+        maxbrstudenata=0;
+        nizStudenata=new Student[maxbrstudenata];
+        brojStudenata=0;
     }
 
     public void upisi(Student s){
@@ -48,9 +57,9 @@ public class Predmet {
             System.out.println("Predmet nema upisanih studenata");
     }
 
-    public void ispisiStudente(Student[] niz){
+    public void ispisiStudente(){
         for(int i=0;i<brojStudenata;i++)
-            System.out.println((i+1)+". "+niz[i]);
+            System.out.println((i+1)+". "+nizStudenata[i]);
     }
 
     public String getNaziv() {

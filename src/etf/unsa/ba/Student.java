@@ -12,6 +12,12 @@ public class Student {
         brindeksa=br;
     }
 
+    public Student(){
+        ime="Niko";
+        prezime="Nikic";
+        brindeksa=0;
+    }
+
     public String toString(){
         return getPrezime()+" "+getIme()+" ("+getBrindeksa()+")";
     }
