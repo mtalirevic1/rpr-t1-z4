@@ -82,4 +82,8 @@ public class Predmet {
         return maxbrstudenata;
     }
 
+    public int getBrojStudenata() {
+        return brojStudenata;
+    }
+
 }
